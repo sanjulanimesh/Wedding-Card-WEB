@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Udara & Hansi</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <center><div class="h1">
+            <img src="sign.png" alt="h1">
+        </div></center>
+
+            <center>
+                <img src="main.jpg" alt="Thank You Card" class="thank">
+            
+            <br><br>
+            <button class="downloadBtn" onclick="downloadImage()">Download</button>
+            </center>
+
+            <script>
+                function downloadImage() {
+                    var link = document.createElement('a');
+                    link.href = 'main.jpg';
+                    link.download = 'main.jpg';
+                    link.click();
+                }
+            </script>
+
+            
+        
+        
+        <div class="container">
+
+            <hr>
+            <header>
+                <!-- <div class="title">Preshoot Photos</div> -->
+                <div class="icon-cart">
+                    <!-- <span>0</span> -->
+                </div>
+            </header>
+            <div class="title" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Preshoot Photos</div>
+            <br><br>
+            <div class="listProduct">
+    
+            </div>
+        </div>
+        <div class="cartTab">
+            <h1>Your Favourite Items</h1>
+            <div class="listCart">
+            </div>
+            <div class="whtmg">
+                <form>
+                    <h1>Send Your Order</h1>
+                    <label for="">Name</label>
+                    <input type="text" class="namemy" required="true">
+            
+                    <label for="">Mobile Number</label>
+                    <input type="text" class="email" required="true">
+            
+                    <label for="">Address</label>
+                    <input type="text" class="country" required="true">
+            
+                    <label for="">Your order</label>
+                    <textarea class="message"></textarea required="true">
+                    <button class="sendbtn" type="submit" onclick="sendwhatsapp('open whatsapp');"><i class="fa-brands fa-whatsapp"></i> Send Via WhatsApp</button>
+                    <script>
+                        function sendwhatsapp(){
+                         var phonenumber = "+94715344743";
+                  
+                         var namemy = document.querySelector(".namemy").value;
+                         var email = document.querySelector(".email").value;
+                         var country = document.querySelector(".country").value;
+                         var message = document.querySelector(".message").value;
+                  
+                         var url = "https://wa.me/" + phonenumber + "?text="
+                         +"*Name :* "+namemy+"%0a"
+                         +"%0a"
+                         +"*Mobile :* "+email+"%0a"
+                         +"%0a"
+                         +"*Address:* "+country+"%0a"
+                         +"%0a"
+                         +"*Message :* "+message
+                         +"%0a%0a"
+                  
+                         window.open(url, '_blank').focus();
+                       }
+                      </script>
+                </form>
+            </div>
+            <div class="btn">
+                <button class="close">CLOSE</button>
+                <button class="checkOut">Check Out</button>
+            </div>
+        </div>
+        <div class="space">,</div>
+    </div>
+        <script src="app.js"></script>
+
+        
+        <script src="script.js"></script>
+
+        
+    </body>
+    <footer>
+        <div class="line-rectangle">
+            <div class="footer-content">
+                <h5>Page Created by <br><a href="https://github.com/SanjulaNimesh">@SanjulaNimesh</a> & <a href="https://github.com/KavinduUdara">@KavinduUdara</a><br></h5>
+            </div>
+        </div>
+        <style>
+            .line-rectangle {
+                width: 100%;
+                height: 5px;
+                background-color: #ffffff;
+            }
+            .footer-content {
+                text-align: center;
+                padding: 10px;
+                background-color: #000000;
+            }
+            h5 {
+                color: #ffffff;
+                font-size: 14px;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </footer>
+</html>

@@ -1,0 +1,455 @@
+body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    background-color: #ffffff;
+    background-image: url(bg.jpg);
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* p {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #f4f4f4;
+}
+
+
+.navbarr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.containerr {
+    padding: 0.6rem 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #121212;
+}
+
+.navbarr .logo-wrapperr {
+    padding-top: 10px;
+    height: 29px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.5) 30%, #000000 50%, rgba(0, 0, 0, 0.5) 70%);
+    -webkit-mask-size: 180%;
+    animation: shine 2s linear infinite;
+
+}
+
+.logo-wrapperr a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.logo-wrapperr a strong {
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: -5px;
+
+}
+
+.navbarr .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbarr .navbar-links a {
+    font-family: Jost, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbarr .navbar-links a:hover {
+    color: rgb(255, 255, 255);
+
+}
+
+@keyframes shine {
+    0% {
+        -webkit-mask-position: 150%;
+    }
+
+    100% {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.container {
+    padding-top: 100px;
+    margin: auto;
+    width: 1000px;
+    max-width: 90vw;
+    text-align: center;
+    transition: transform .5s;
+}
+
+svg {
+    width: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.icon-cart {
+    position: relative;
+    transition: 0.5s;
+    color: #fff;
+}
+.icon-cart .imgheart{
+    color: white;
+}
+
+.icon-cart i{
+    scale: 200px;
+}
+.icon-cart span {
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+
+.title {
+    text-align: center;
+    font-size: xx-large;
+    color: #ffffff;
+}
+
+header .featured__controls {
+    text-decoration: none;
+    list-style: none;
+}
+
+.listProduct .item {
+    overflow: hidden;
+    transition: 0.7s;
+    box-shadow: #000000;
+    box-shadow: inset;
+
+}
+
+.listProduct .item img {
+    border-radius: 5%;
+}
+
+.listProduct .item:hover {
+    scale: 108%;
+    z-index: 5;
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    gap: 1px;
+}
+
+.listProduct .item {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.listProduct .item h4 {
+    font-size: 16px;
+    padding-bottom: 0px;
+}
+
+.listProduct .item .price {
+    letter-spacing: 2px;
+    padding-top: 0px;
+}
+.listProduct .item button.addCart {
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 40%;
+    transition: 0.5s;
+}
+
+.listProduct .item button.addCart i {
+    transform: rotate(360deg);
+}
+
+.listProduct .item button.addCart:hover {
+    background-color: lightblue;
+    color: #ff0000;
+    scale: 110%;
+    cursor: pointer;
+}
+
+.listProduct .item button.whatsappmsg {
+    background-color: #209e14;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: 5px;
+    width: 40%;
+    transition: 0.5s;
+
+}
+
+.listProduct .item button.whatsappmsg:hover{
+    background-color: rgb(191, 255, 154);
+    cursor: pointer;
+    scale: 110%;
+}
+
+.listProduct .item button.whatsappmsg i{
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.listProduct .item button.whatsappmsg:hover i{
+    color: green;
+}
+
+.listProduct .item button.whatsappmsg a{
+    color: white;
+    text-decoration: none;
+}
+
+/* cart */
+.cartTab {
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    height: px;
+    z-index: 10;
+}
+
+body.showCart .cartTab {
+    right: 0;
+}
+
+body.showCart .container {
+    transform: translateX(-250px);
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btn {
+    margin-top: 330px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+
+.cartTab .checkOut {
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    cursor: pointer;
+    height: 50px;
+    align-items: center;
+
+}
+
+.cartTab .close {
+    background-color: #eee;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    height: 50px;
+    align-items: center;
+}
+
+.listCart .item img {
+    width: 100%;
+}
+.listCart{
+    height: 415px;
+}
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+
+.listCart .item:nth-child(even) {
+    background-color: #eee1;
+}
+
+.listCart {
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+    width: 0;
+}
+
+.whtmg{
+    width: 400px;
+}
+
+form{
+    width: 400px;
+    margin-top: 0%;
+  margin: 15px 5px;
+  font-size: 16px;
+  background: #353432;
+  border: none;
+  outline: none;
+}
+form h1{
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 10px;
+  
+}
+form label{
+  display: block;
+  margin-bottom: 5px;
+  border: none;
+  color: yellow;
+}
+form input, form textarea{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+  border: none;
+  border-bottom: 2px solid yellow;
+  border-bottom-width: 50%;
+  outline: none;
+  background: none;
+  color: white;
+}
+form input, form .text{
+    background: none;
+}
+form .sendbtn{
+  background: #209e14;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+form button:hover{
+  background:  rgb(191, 255, 154);
+  color: #209e14;
+  scale: 105%;
+
+}
+
+@media only screen and (max-width: 992px) {
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .listProduct {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    
+
+    }
+}

@@ -1,0 +1,94 @@
+.thank{
+    text-align: center;
+    width: 50%;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}
+.thank:hover{
+    background-color: #f1f1f1;
+    color: black;
+    cursor: pointer;
+    scale: 103%;
+    color: blue;
+}
+
+.space{
+    margin-top: 100px;
+}
+
+.h1{
+    margin-top: 50px;
+    text-align: center;
+    width: 25%;
+    color: black;
+}
+
+.downloadBtn{
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: 0.5s;
+    background-color: transparent;background-color: transparent;
+    border: 5px solid white;border: 2px solid white;
+    border-color: white;
+    color: white;
+}
+.downloadBtn:hover{
+    background-color: #f1f1f1;
+    color: black;
+    cursor: pointer;
+    scale: 110%;
+    color: blue;
+    
+}
+
+@media only screen and (max-width: 480px){
+    .h1{
+        width: 70%;
+    }
+    .thank{
+        width: 90%;
+    }
+    .downloadBtn{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+
+    .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f1f1f1;
+    }
+
+    .loading-text {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #333;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+
+
+}
